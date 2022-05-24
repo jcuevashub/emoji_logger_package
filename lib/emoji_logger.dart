@@ -1,5 +1,3 @@
 library emoji_logger;
 
-void hello() {
-  print("Hello World");
-}
+export 'src/logger_src.dart';

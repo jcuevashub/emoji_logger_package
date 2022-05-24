@@ -1,0 +1,31 @@
+name: emoji_logger_native
+description: Simple logger that uses emoji to highlight log print lines with ease.
+version: 0.0.1
+repository: https://github.com/jcuevashub/emoji_logger_package.git
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.hacksondev.emoji_logger_native
+        pluginClass: EmojiLoggerNativePlugin
+      ios:
+        pluginClass: EmojiLoggerNativePlugin
+      web:
+        pluginClass: EmojiLoggerNativeWeb
+        fileName: emoji_logger_native_web.dart
